@@ -70,4 +70,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/implicit_call"
+        android:layout_width="166dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/implicit_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Student_ID"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/explicit_call"
+        android:layout_width="166dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/explicit_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentID"
+        app:layout_constraintVertical_bias="0.077" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

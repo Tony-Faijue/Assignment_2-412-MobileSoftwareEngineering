@@ -3,4 +3,6 @@
     <string name="full_name">Tony Faijue</string>
     <string name="name_label">Name</string>
     <string name="studentID_label">Student ID:</string>
+    <string name="implicit_call">Start Activity with Implicit Intent</string>
+    <string name="explicit_call">Start Activity with Explicit Intent</string>
 </resources>
