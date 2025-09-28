@@ -3,6 +3,16 @@
     <string name="full_name">Tony Faijue</string>
     <string name="name_label">Name</string>
     <string name="studentID_label">Student ID:</string>
-    <string name="implicit_call">Start Activity with Implicit Intent</string>
-    <string name="explicit_call">Start Activity with Explicit Intent</string>
+    <string name="implicit_call">Start Activity Implicit</string>
+    <string name="explicit_call">Start Activity Explicit</string>
+    <string name="mobile_challenge_list_label">Mobile Software Engineering Challenges</string>
+    <string name="main_call">Start Main Activity</string>
+    <string-array name="mobile_challenges_array">
+        <item>Device Fragmentation</item>
+        <item>OS Fragmentation</item>
+        <item>Rapid Changes</item>
+        <item>Unstable and Dynamic Environments</item>
+        <item>Low Tolerance from Users</item>
+        <item>Low Security and Privacy Awareness</item>
+    </string-array>
 </resources>

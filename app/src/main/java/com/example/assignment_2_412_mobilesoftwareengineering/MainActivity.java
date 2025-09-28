@@ -1,6 +1,10 @@
 package com.example.assignment_2_412_mobilesoftwareengineering;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
@@ -13,14 +17,45 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstance);
         //inflate the layout
         setContentView(R.layout.activity_main);
+
         //initialize UI components
+
+        //Create button objects, find them by their corresponding id
+        Button implicitButton = (Button) findViewById(R.id.implicit_call);
+        Button explicitButton = (Button) findViewById(R.id.explicit_call);
 
         //setup Listeners
 
-        //System.out.println(R.id.fullName);
-        //String appName = getString(R.string.app_name);
-        //String firstName = getString(R.string.first_name);
-        //String lastName = getString(R.string.last_name);
-        //String fullName = firstName + " " + lastname;
+        //set on click listeners for each button that calls activity with intent
+        implicitButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openNewImplicitActivity();
+            }
+        });
+        explicitButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openNewExplicitActivity();
+            }
+        });
+    }
+
+    /**
+     * Method to start second activity implicitly
+     *
+     */
+    public void openNewImplicitActivity(){
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        startActivity(intent);
+    }
+
+    /**
+     * Method to start second activity explicitly
+     */
+    public void openNewExplicitActivity(){
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }
