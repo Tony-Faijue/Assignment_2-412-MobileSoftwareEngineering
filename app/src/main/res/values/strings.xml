@@ -5,6 +5,8 @@
     <string name="studentID_label">Student ID:</string>
     <string name="implicit_call">Start Activity Implicit</string>
     <string name="explicit_call">Start Activity Explicit</string>
+    <string name="view_img_activity">View Image Activity</string>
+    <string name="capture_img_btn">Capture Image</string>
     <string name="mobile_challenge_list_label">Mobile Software Engineering Challenges</string>
     <string name="main_call">Start Main Activity</string>
     <string-array name="mobile_challenges_array">
