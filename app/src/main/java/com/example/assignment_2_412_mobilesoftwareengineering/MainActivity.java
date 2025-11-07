@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         //Create button objects, find them by their corresponding id
         Button implicitButton = (Button) findViewById(R.id.implicit_call);
         Button explicitButton = (Button) findViewById(R.id.explicit_call);
+        Button viewImgActivityBtn = (Button) findViewById(R.id.view_img_activity);
 
         //setup Listeners
 
@@ -39,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
                 openNewExplicitActivity();
             }
         });
+        //Add on click listener event for view img activity button
+        viewImgActivityBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                openThirdActivity();
+            }});
     }
 
     /**
@@ -56,6 +63,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void openNewExplicitActivity(){
         Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
+    }
+
+    /**
+     * Method to start third activity (view img activity)
+     *
+     */
+    public void openThirdActivity(){
+        Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
     }
 }
