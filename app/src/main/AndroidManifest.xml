@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <permission android:name="com.example.assignment_2_412_mobilesoftwareengineering.MSE412" android:protectionLevel="dangerous"/>
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-feature android:name="android.hardware.camera" android:required="false"/>
-
+    <uses-permission android:name="com.example.assignment_2_412_mobilesoftwareengineering.MSE412"/>
 
     <application
         android:allowBackup="true"
@@ -22,7 +23,7 @@
             <category android:name="android.intent.category.LAUNCHER"/>
         </intent-filter>
     </activity>
-        <activity android:name="com.example.assignment_2_412_mobilesoftwareengineering.SecondActivity"/>
+        <activity android:name="com.example.assignment_2_412_mobilesoftwareengineering.SecondActivity" android:exported="true" android:permission="com.example.assignment_2_412_mobilesoftwareengineering.MSE412"/>
         <activity android:name="com.example.assignment_2_412_mobilesoftwareengineering.ThirdActivity"/>
         <provider
             android:authorities="${applicationId}.fileprovider"
